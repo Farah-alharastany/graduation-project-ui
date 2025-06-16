@@ -701,7 +701,7 @@ body {
 .footer .link {
   font-size: var(--fontSizeSm);
   line-height: var(--fontLineHeightSm);
-  font-weight: var(--fontWeightNormal);
+  font-weight: var(--fontWeightBold);
   color: var(--footerLinkItemDefaultFontColor);
   padding: var(--spacingSm) var(--spacingMd);
 }
