@@ -1,0 +1,892 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+
+@import "variables-light.css";
+
+/* Font Family for Intire Page */
+body {
+  font-family: var(--bodyFontFamily);
+}
+
+/* Page Container */
+.page-container {
+  background-color: var(--pageContainerBackgroundColor);
+  border-radius: var(--pageContainerBorderRaduis);
+  padding: var(--spacing5Xl) var(--spacing2Xl);
+}
+
+/* All Sections Shadow */
+.section.shadow-sm {
+  box-shadow: var(--sectionShadowX) var(--sectionShadowY)
+    var(--sectionShadowBlur) var(--sectionShadowColor) !important;
+}
+
+/* All Sections Style */
+.section {
+  padding: var(--spacing2Xl) var(--spacing2Xl);
+  margin-bottom: var(--spacing2Xl);
+  border-width: var(--borderWidthNone);
+  border-radius: var(--borderRadiusSm) !important;
+  border-color: var(--sectionBorderColor);
+  background-color: var(--sectionBorderColor) !important;
+}
+
+/* All Sections Title Style */
+.section-title {
+  font-weight: var(--fontsWeightBold);
+  font-size: var(--fontSizeSm);
+  line-height: var(--fontLineHeightSm);
+  margin-bottom: var(--spacing2Xl);
+  color: var(--sectionTitleFontColor);
+}
+
+/* All Avatars Border Radius */
+.avatar {
+  border-radius: var(--borderRadiusFull);
+}
+
+/* ////////////////////////////   Meeting Section Style Start Here   ////////////////////////////  */
+
+/* Avatar Small Style */
+.avatar-small {
+  height: var(--sizingMd);
+  margin-right: var(--spacing3Xs);
+}
+
+/* Meeting Card Style */
+.meeting-card {
+  padding: var(--spacing2Xl);
+  margin-bottom: var(--spacingMd);
+  border-radius: var(--meetingCardBorderRaduis);
+}
+
+/* Meeting Card Title Style */
+.meeting-card .title {
+  font-weight: var(--fontWeightNormal);
+  font-size: var(--fontSizeSm);
+  line-height: var(--fontLineHeightSm);
+  margin-bottom: var(--spacingSm);
+}
+
+/* Meeting Card Time Style  */
+.meeting-card .time {
+  font-weight: var(--fontsWeightNormal);
+  font-size: var(--fontSizeXs);
+  line-height: var(--fontLineHeightXs);
+  margin-bottom: var(--spacingMd);
+}
+
+/* Meeting Card Primary Style */
+.meeting-card.primary {
+  background-color: var(--meetingCardPrimaryBackgroundColor);
+  border-left: var(--borderWidthLg) var(--borderStylePrimary) #916dff !important;
+}
+
+/* Meeting Card Primary Title Style */
+.meeting-card.primary .title {
+  color: var(--meetingCardPrimaryTitleFontColor);
+}
+
+/* Meeting Card Primary Time Style */
+.meeting-card.primary .time {
+  color: var(--meetingCardPrimaryTimeFontColor);
+}
+
+/* Meeting Card Primary Avatar Style */
+.meeting-card.primary .avatar {
+  border: var(--borderWidthMd) var(--borderStylePrimary)
+    var(--meetingCardPrimaryAvatarGroupAvatarBorderColor);
+}
+
+/* Meeting Card Secondary Style  */
+.meeting-card.secondary {
+  background-color: var(--meetingCardSecondaryBackgroundColor);
+  border-left: var(--borderWidthLg) var(--borderStylePrimary)
+    var(--meetingCardSecondaryBorderLeftColor) !important;
+}
+
+/* Meeting Card Secondary Title Style */
+.meeting-card.secondary .title {
+  color: var(--meetingCardSecondaryTitleFontColor);
+}
+
+/* Meeting Card Secondary Title Style */
+.meeting-card.secondary .time {
+  color: var(--meetingCardSecondaryTimeFontColor);
+}
+
+/* Meeting Card Secondary Avatar Style */
+.meeting-card.secondary .avatar {
+  border: var(--borderWidthMd) var(--borderStylePrimary)
+    var(--meetingCardSecondaryAvatarGroupAvatarBorderColor);
+}
+
+/* Meeting Card Tertiary Style  */
+.meeting-card.tertiary {
+  background-color: var(--meetingCardTertiaryBackgroundColor);
+  border-left: var(--borderWidthLg) var(--borderStylePrimary)
+    var(--meetingCardTertiaryBorderLeftColor) !important;
+  margin-bottom: var(--spacingNone);
+}
+
+/* Meeting Card Tertiary Title Style */
+.meeting-card.tertiary .title {
+  color: var(--meetingCardTertiaryTitleFontColor);
+}
+
+/* Meeting Card Tertiary Time Style */
+.meeting-card.tertiary .time {
+  color: var(--meetingCardTertiaryTimeFontColor);
+}
+
+/* Meeting Card Tertiary Avatar Style */
+.meeting-card.tertiary .avatar {
+  border: var(--borderWidthMd) var(--borderStylePrimary)
+    var(--meetingCardTertiaryAvatarGroupAvatarBorderColor);
+}
+
+/* ////////////////////////////   Apps Notifications Section Style Start Here   ////////////////////////////  */
+
+/* App Notification List style */
+.apps-notifications .list {
+  margin-bottom: var(--spacing2Xl);
+}
+
+/* App Notification Image Style */
+.apps-notifications img {
+  margin-right: var(--spacingMd);
+}
+
+/* App Notification Title Style */
+.apps-notifications .title {
+  color: var(--sectionTitleFontColor);
+  font-weight: var(--fontWeightNormal);
+  font-size: var(--fontSizeSm);
+  line-height: var(--fontLineHeightSm);
+}
+
+/* Don't Touch */
+.form-check-input {
+  margin-top: 0px;
+}
+
+/* Don't Touch */
+.form-switch .form-check-input {
+  --bs-form-switch-bg: none;
+  background-image: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Don't Touch */
+/* Don't Touch */
+.form-check-input:focus,
+.form-check-input:active {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+/* App Notification Toggle Style */
+.form-switch .form-check-input {
+  width: var(--sizingXl) !important;
+  height: var(--sizingMd) !important;
+  border-radius: var(--borderRadius2Xl);
+}
+
+/* App Notification Toggle Unchecked Style */
+.form-switch .form-check-input {
+  background-color: var(--notificationItemToggleButtonUnCheckedBackgroundColor);
+  border-color: var(--notificationItemToggleButtonUnCheckedBorderColor);
+}
+
+/* App Notification Toggle Unchecked Circle Style */
+.form-switch .form-check-input::before {
+  content: "";
+  position: absolute;
+  top: var(--sizingXs); /*Edit */
+  left: var(--sizingXs); /*Edit */
+  width: var(--sizingSm) !important; /*Edit */
+  height: var(--sizingSm) !important; /*Edit */
+  background-color: var(
+    --notificationItemToggleButtonUnCheckedCircleBackgroundColor
+  );
+  border-radius: var(--borderRadiusFull);
+  transition: transform 0.3s ease;
+}
+
+/* App Notification Toggle Checked Style */
+.form-switch .form-check-input:checked {
+  background-color: var(--notificationItemToggleButtonCheckedBackgroundColor);
+  border-color: var(--notificationItemToggleButtonCheckedBorderColor);
+}
+
+/* App Notification Toggle Checked Circle Style */
+.form-switch .form-check-input:checked::before {
+  content: "";
+  position: absolute;
+  top: var(--sizingXs);
+  left: -6px;
+  width: var(--sizingSm) !important;
+  height: var(--sizingSm) !important;
+  background-color: var(
+    --notificationItemToggleButtonCheckedCircleBackgroundColor
+  );
+  border-radius: var(--borderRadiusFull);
+  transition: transform 0.3s ease;
+  transform: translateX(1.5rem);
+}
+
+/* Don't Touch */
+.form-check-input:checked:focus::before,
+.form-check-input:checked:active::before {
+  position: absolute;
+  top: 3px;
+  left: -5px;
+}
+
+/* Don't Touch */
+.form-check-input:focus::before,
+.form-check-input:active::before {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+/* ////////////////////////////   Header Section Style Start Here   ////////////////////////////  */
+
+/* Avatar Large Style */
+.avatar-large {
+  height: var(--sizing2Xl);
+}
+
+/* Header Section Avatar Margin Bottom */
+.header .avatar {
+  margin-bottom: var(--spacingSm);
+}
+
+/* Header Section Name Style */
+.header .name {
+  font-size: var(--fontSizeMd);
+  line-height: var(--fontLineHeightMd);
+  font-weight: var(--fontWeightNormal);
+  color: var(--sectionTitleFontColor);
+  margin-bottom: var(--spacingXs);
+}
+
+/* Header Section Role Style */
+.header .role {
+  font-size: var(--fontSizeSm);
+  line-height: var(--fontLineHeightSm);
+  font-weight: var(--fontWeightNormal);
+  color: var(--headerProfileRoleFontColor);
+}
+
+/* Header Section Title Style  */
+.header .title {
+  font-size: var(--fontSizeLg);
+  line-height: var(--fontLineHeightLg);
+  font-weight: var(--fontWeightBold);
+  color: var(--sectionTitleFontColor);
+  margin-top: var(--spacingLg);
+  margin-bottom: var(--spacingNone);
+}
+
+/* ////////////////////////////   Navbar Section Style Start Here   ////////////////////////////  */
+
+/* Navbar Section Style */
+.section.navbar {
+  padding: var(--spacingLg) var(--spacing2Xl);
+}
+
+/* Navbar Section Logo Name Style */
+.logo-name {
+  color: var(--sectionTitleFontColor);
+  font-size: var(--fontSizeSm);
+  line-height: var(--fontLineHeightSm);
+  font-weight: var(--fontWeightBold);
+}
+
+/* Navbar Section Logo Icon Style */
+.navbar .logo-icon {
+  background-color: var(--navbarBrandLogoBackgroundColor);
+  color: var(--navbarBrandLogoColor);
+  font-size: var(--fontSizeMd);
+  padding: var(--spacingMd);
+  border-radius: var(--borderRadiusXs);
+  margin-right: var(--spacingMd);
+}
+
+/* Navbar Section Link Default Style */
+.nav-item .nav-link {
+  color: var(--navbarContentNavLinkDefaultFontColor);
+  font-size: var(--fontSizeSm);
+  font-weight: var(--fontWeightRegular);
+  line-height: var(--fontLineHeightSm);
+  background-color: transparent;
+  padding: var(--spacingMd) var(--spacingLg) !important;
+  border-radius: var(--navbarContentNavLinkBorderRadius);
+}
+
+/* Navbar Section Link Hover Style */
+.nav-item .nav-link:hover {
+  background-color: var(--navbarContentNavLinkHoverFontColor);
+}
+
+/* Navbar Sections Links Gap */
+.navbar-nav {
+  gap: var(--spacingSm);
+}
+
+/* Navbar Section Link Icon Style */
+.nav-item i {
+  font-size: var(--fontSizeXs);
+  margin-left: var(--spacingSm);
+  position: relative;
+  top: var(--spacing2Xs);
+}
+
+/* Don't Touch */
+.nav-link.dropdown-toggle::after {
+  display: none;
+}
+
+/* ////////////////////////////   Select Price Item Section Style Start Here   ////////////////////////////  */
+
+/* Select Section Style */
+.section.select {
+  margin-bottom: var(--spacingNone);
+  padding: var(--spacing2Xl) var(--spacing2Xl);
+  border: var(--borderWidthMd) var(--borderStylePrimary)
+    var(--selectedRadioButtonBorderColor); /* Ask Farah */
+}
+// Manal
+/* Select Section Title Style */
+.select .title {
+  font-weight: var(--fontsWeightRegular);
+  font-size: var(--fontSizeSm);
+  line-height: var(--fontLineHeightSm);
+  color: var(--sectionTitleFontColor);
+  margin-bottom: var(--spacingMd);
+}
+
+/* Select Section Description style */
+.select .desc {
+  font-weight: var(--fontsWeightRegular);
+  font-size: var(--fontSizeXs);
+  line-height: var(--fontLineHeightXs);
+  color: var(--SelectedContentDescriptionFontColor);
+}
+
+/* Select Section Price Style */
+.select .price {
+  font-weight: var(--fontsWeightRegular);
+  font-size: var(--fontSizeSm);
+  line-height: var(--fontLineHeightSm);
+  color: var(--sectionTitleFontColor);
+}
+
+/* Select Section Content Style */
+.select .content {
+  gap: var(--spacingNone);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Select Section Radio Buton Style */
+.form-check-input:checked {
+  background-color: var(--selectedRadioButtonBorderColor);
+  border-color: var(--selectedBorderColor);
+}
+
+/* ////////////////////////////   Tabs Section Style Start Here   ////////////////////////////  */
+
+/* Tabs Section Style */
+.nav-tabs {
+  background-color: var(--navigationTabsBackgroundColor);
+  padding: var(--spacingXs) var(--spacingXs);
+  border-radius: var(--borderRadiusXs);
+  --bs-nav-tabs-border-width: initial;
+  border: var(--borderWidthNone);
+}
+
+/* Tab Section Link Default Style */
+.nav-tabs .nav-link {
+  background-color: var(--navigationTabsNavLinkDefaultBackgroundColor);
+  color: var(--navigationTabsNavLinkDefaultFontColor);
+  padding: var(--spacingSm) var(--spacingMd) !important;
+  border-radius: var(--borderRadius2Xs);
+  border: var(--borderWidthNone);
+}
+
+/* Tab Section Link Hover Style */
+.nav-tabs .nav-link:hover {
+  background-color: var(--navigationTabsNavLinkHoverBackgroundColor);
+  color: var(--navigationTabsNavLinkHoverFontColor);
+  border-radius: var(--borderRadius2Xs);
+  border: var(--borderWidthNone);
+}
+
+/* Tab Section Link Active Style */
+.nav-tabs .nav-link.active {
+  background-color: var(--navigationTabsNavLinkActiveBackgroundColor);
+  color: var(--navigationTabsNavLinkActiveFontColor);
+  border-radius: var(--borderRadius2Xs);
+  border: var(--borderWidthNone);
+}
+
+/* ////////////////////////////   Input Field Section Style Start Here   ////////////////////////////  */
+
+/* Input Field Default Style */
+.form-control {
+  background-color: var(--inputSearchDefaultBackgroundColor);
+  border: var(--borderWidthSm) var(--borderStylePrimary)
+    var(--inputSearchDefaultBorderColor);
+  border-radius: var(--borderRadiusXs);
+  padding: var(--spacingSm) var(--spacingLg);
+  font-size: var(--fontSizeSm);
+  line-height: var(--fontLineHeightSm);
+  font-weight: var(--fontsWeightNormal);
+  color: var(--inputSearchDefaultFontColor) !important;
+}
+
+/* Input Field Default Placeholder Style */
+.form-control::placeholder {
+  font-size: var(--fontSizeSm);
+  line-height: var(--fontLineHeightSm);
+  font-weight: var(--fontsWeightNormal);
+  color: var(--inputSearchDefaultFontColor) !important;
+}
+
+/* Input Field Hover Style */
+.form-control:hover {
+  background-color: var(--inputSearchHoverBackgroundColor);
+  border-color: var(--inputSearchHoverBorderColor);
+}
+
+/* Input Field Hover Placeholder Style */
+.form-control:hover::placeholder {
+  border-color: var(--inputSearchHoverBorderColor);
+  color: var(--inputSearchHoverFontColor) !important;
+}
+
+/* Input Field Focus Style */
+.form-control:focus {
+  background-color: var(--inputSearchFocusBackgroundColor);
+  border-color: var(--inputSearchFocusBorderColor);
+  outline: none;
+  box-shadow: none;
+}
+
+/* Input Field Focus Placeholder Style */
+.form-control:focus::placeholder {
+  border-color: var(--inputSearchFocusBorderColor);
+  color: var(--inputSearchFocusFontColor) !important;
+}
+
+/* ////////////////////////////   Buttons Section Style Start Here   ////////////////////////////  */
+
+/* Buttons Style */
+.btn {
+  border-radius: var(--borderRadiusMd);
+  padding: var(--spacingLg) var(--spacing5Xl);
+  font-size: var(--fontSizeSm);
+  line-height: var(--fontLineHeightSm);
+  font-weight: var(--fontsWeightNormal);
+  border: var(--borderWidthNone);
+}
+
+/* Buttons Primary Default Style */
+.btn-primary {
+  background-color: var(--buttonPrimaryDefaultBackgroundColor);
+  color: var(--buttonPrimaryDefaultFontColor);
+}
+
+/* Buttons Primary Hover Style */
+.btn-primary:hover {
+  background-color: var(--buttonPrimaryHoverBackgroundColor);
+  color: var(--buttonPrimaryHoverFontColor);
+}
+
+/* Buttons Primary Focused Style */
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--buttonPrimaryFocusBackgroundColor);
+  color: var(--buttonPrimaryFocusFontColor);
+}
+
+/* Buttons Secondary Default Style */
+.btn-secondary {
+  background-color: var(--buttonSecondaryDefaultBackgroundColor);
+  color: var(--buttonSecondaryDefaultFontColor);
+}
+
+/* Buttons Secondary Hover Style */
+.btn-secondary:hover,
+.btn-secondary:active {
+  background-color: var(--buttonSecondaryHoverBackgroundColor);
+  color: var(--buttonSecondaryHoverFontColor);
+}
+
+/* Buttons Secondary Focused Style */
+.btn-secondary:focus {
+  background-color: var(--buttonSecondaryFocusBackgroundColor);
+  color: var(--buttonSecondaryFocusFontColor);
+}
+
+/* ////////////////////////////   Pagination Section Style Start Here   ////////////////////////////  */
+
+/* Pagination Section Style */
+.pagination {
+  gap: var(--spacingXs);
+}
+//Alaa
+/* Pagination Section Link Default Style */
+.pagination .page-item .page-link {
+  border-radius: var(--paginationItemBorderRadius) !important;
+  background-color: var(--paginationItemDefaultBackgroundColor);
+  color: var(--paginationItemDefaultFontColor);
+  padding: var(--spacingMd) var(--spacingMd);
+  font-size: var(--sizingSm);
+  line-height: var(--fontLineHeightSm);
+  font-weight: var(--fontsWeightNormal);
+  border: none;
+}
+
+/* Pagination Section Link Hover Style */
+.pagination .page-item .page-link:hover {
+  background-color: var(--paginationItemHoverBackgroundColor);
+  color: var(--paginationItemHoverFontColor);
+}
+
+/* Pagination Section Link Active Style */
+.pagination .page-item.active .page-link {
+  background-color: var(--paginationItemActiveBackgroundColor);
+  color: var(--paginationItemActiveFontColor);
+  border-radius: var(--paginationItemBorderRadius) !important;
+}
+
+/* ////////////////////////////   Color Palette Section Style Start Here   ////////////////////////////  */
+
+/* Palette Section Style */
+.palette .padding-short {
+  margin-bottom: var(--spacingLg);
+}
+
+/* Palette Section Item Style */
+.palette .item {
+  font-size: var(--sizingSm);
+  line-height: var(--fontLineHeightSm);
+  font-weight: var(--fontsWeightRegular);
+  padding: var(--spacingLg) var(--spacingMd);
+}
+
+/* Palette Section Item Primary 100 Style */
+.palette .item.primary-100 {
+  background-color: var(--paletteCollectionPrimary100BackgroundColor);
+  color: var(--paletteCollectionPrimary100FontColor);
+}
+
+/* Palette Section Item Primary 200 Style */
+.palette .item.primary-200 {
+  background-color: var(--paletteCollectionPrimary200BackgroundColor);
+  color: var(--paletteCollectionPrimary200FontColor);
+}
+
+/* Palette Section Item Primary 300 Style */
+.palette .item.primary-300 {
+  background-color: var(--paletteCollectionPrimary300BackgroundColor);
+  color: var(--paletteCollectionPrimary300FontColor);
+}
+
+/* Palette Section Item Primary 400 Style */
+.palette .item.primary-400 {
+  background-color: var(--paletteCollectionPrimary400BackgroundColor);
+  color: var(--paletteCollectionPrimary400FontColor);
+}
+
+/* Palette Section Item Primary 500 Style */
+.palette .item.primary-500 {
+  background-color: var(--paletteCollectionPrimary500BackgroundColor);
+  color: var(--paletteCollectionPrimary500FontColor);
+}
+
+/* Palette Section Item Primary 600 Style */
+.palette .item.primary-600 {
+  background-color: var(--paletteCollectionPrimary600BackgroundColor);
+  color: var(--paletteCollectionPrimary600FontColor);
+}
+
+/* Palette Section Item Primary 700 Style */
+.palette .item.primary-700 {
+  background-color: var(--paletteCollectionPrimary700BackgroundColor);
+  color: var(--paletteCollectionPrimary700FontColor);
+}
+
+/* Palette Section Item Primary 800 Style */
+.palette .item.primary-800 {
+  background-color: var(--paletteCollectionPrimary800BackgroundColor);
+  color: var(--paletteCollectionPrimary800FontColor);
+}
+
+/* Palette Section Item Primary 900 Style */
+.palette .item.primary-900 {
+  background-color: var(--paletteCollectionPrimary900BackgroundColor);
+  color: var(--paletteCollectionPrimary900FontColor);
+}
+
+/* Palette Section Item Secondary 100 Style */
+.palette .item.secondary-100 {
+  background-color: var(--paletteCollectionSecondary100BackgroundColor);
+  color: var(--paletteCollectionSecondary100FontColor);
+}
+
+/* Palette Section Item Secondary 200 Style */
+.palette .item.secondary-200 {
+  background-color: var(--paletteCollectionSecondary100BackgroundColor);
+  color: var(--paletteCollectionSecondary200FontColor);
+}
+
+/* Palette Section Item Secondary 300 Style */
+.palette .item.secondary-300 {
+  background-color: var(--paletteCollectionSecondary300BackgroundColor);
+  color: var(--paletteCollectionSecondary300FontColor);
+}
+
+/* Palette Section Item Secondary 400 Style */
+.palette .item.secondary-400 {
+  background-color: var(--paletteCollectionSecondary400BackgroundColor);
+  color: var(--paletteCollectionSecondary400FontColor);
+}
+
+/* Palette Section Item Secondary 500 Style */
+.palette .item.secondary-500 {
+  background-color: var(--paletteCollectionSecondary500BackgroundColor);
+  color: var(--paletteCollectionSecondary500FontColor);
+}
+
+/* Palette Section Item Secondary 600 Style */
+.palette .item.secondary-600 {
+  background-color: var(--paletteCollectionSecondary600BackgroundColor);
+  color: var(--paletteCollectionSecondary600FontColor);
+}
+
+/* Palette Section Item Secondary 700 Style */
+.palette .item.secondary-700 {
+  background-color: var(--paletteCollectionSecondary700BackgroundColor);
+  color: var(--paletteCollectionSecondary700FontColor);
+}
+
+/* Palette Section Item Secondary 800 Style */
+.palette .item.secondary-800 {
+  background-color: var(--paletteCollectionSecondary800BackgroundColor);
+  color: var(--paletteCollectionSecondary800FontColor);
+}
+
+/* Palette Section Item Secondary 900 Style */
+.palette .item.secondary-900 {
+  background-color: var(--paletteCollectionSecondary900BackgroundColor);
+  color: var(--paletteCollectionSecondary900FontColor);
+}
+
+/* ////////////////////////////   Footer Section Style Start Here   ////////////////////////////  */
+
+/* Footer Section Links Default style */
+.footer .link {
+  font-size: var(--fontSizeSm);
+  line-height: var(--fontLineHeightSm);
+  font-weight: var(--fontWeightNormal);
+  color: var(--footerLinkItemDefaultFontColor);
+  padding: var(--spacingSm) var(--spacingMd);
+}
+
+/* Footer Section Links Hover style */
+.footer .link:hover {
+  color: var(--footerLinkItemHoverFontColor);
+}
+
+/* ////////////////////////////   Alerts Section Style Start Here   ////////////////////////////  */
+//Ayat
+/* Alert Section Card Style */
+.alert {
+  padding: var(--spacingXl);
+  border-radius: var(--alertItemBorderRadius);
+  border-width: var(--borderWidthMd);
+}
+
+/* Alert Section Card Icon Style */
+.icon {
+  margin-right: var(--spacingLg);
+}
+
+/* Alert Section Card Content Style */
+.alert .content {
+  font-size: var(--fontsizexs);
+  line-height: var(--fontlineheightxs);
+  font-weight: var(--fontweightbold);
+}
+
+/* Alert Section Card Text with link Style */
+.alert span {
+  text-decoration: underline;
+}
+
+/* Alert Section Card Primary Style */
+.alert-primary {
+  background-color: var(--alertItemPrimaryBackgroundColor);
+  border-color: var(--alertItemPrimaryBorderColor);
+  color: var(--alertItemPrimaryContentFontColor);
+  border-style: var(--borderStylePrimary);
+}
+
+/* Alert Section Card Primary Icon Style */
+.inbox {
+  color: var(--alertItemPrimaryIconColor);
+}
+
+/* Alert Section Card Success Style */
+.alert-success {
+  background-color: var(--alertItemSuccessBackgroundColor);
+  border-color: var(--alertItemSuccessBorderColor);
+  color: var(--alertItemSuccessContentFontColor);
+  border-style: var(--borderStylePrimary);
+}
+
+/* Alert Section Card Success Icon Style */
+.badge-check {
+  color: var(--alertItemSuccessIconColor);
+}
+
+/* Alert Section Card Warning Style */
+.alert-warning {
+  background-color: var(--alertItemWarningBackgroundColor);
+  border-color: var(--alertItemWarningBorderColor);
+  color: var(--alertItemWarningContentFontColor);
+  border-style: var(--borderStyleSecondary);
+}
+
+/* Alert Section Card Warning Icon Style */
+.shield-check {
+  color: var(--alertItemWarningIconColor: );
+}
+
+/* Alert Section Card Danger Style */
+.alert-danger {
+  background-color: var(--alertItemDangerBackgroundColor);
+  border-color: var(--alertItemDangerBorderColor);
+  color: var(--alertItemDangerContentFontColor);
+  border-style: var(--borderStylePrimary);
+}
+
+/* Alert Section Card Danger Icon Style */
+.lock {
+  color: var(--alertItemDangerIconColor: );
+}
+
+/* ////////////////////////////   Card Section Style Start Here   ////////////////////////////  */
+
+/* Card Section Style */
+.section.card {
+  padding: var(--cardPaddingX);
+}
+
+/* Card Section Image Style */
+.card .card-image {
+  background-image: url("../imgs/card-image-light.png");
+  border-radius: 8px;
+  background-size: cover;
+  height: 224px;
+  background-repeat: no-repeat;
+}
+
+/* Card Section Body Style */
+.card .card-body {
+  padding: 20px 0px 12px;
+}
+
+/* Card Section Title Style */
+.card .card-title {
+  font-size: var(--fontsizemd);
+  font-weight: var(--fontweightnormal);
+  line-height: var(--fontlineheightmd);
+  color: var(--cardBodyContentTitleFontColor);
+  margin-bottom: var(--spacingSm);
+}
+
+/* Card Section Text Style */
+.card .card-text {
+  font-size: var(--fontSizeXs);
+  font-weight: var(--fontsWeightRegular);
+  line-height: var(--fontLineHeightMd);
+  color: var(--cardBodyContentTextFontColor);
+  margin-bottom: var(--spacing2Xl);
+}
+
+/* Card Section Stars Style */
+.card .card-body .reviews .stars {
+  display: flex;
+  //To be added
+  gap: 2px;
+}
+
+/* Card Section Starts Icons Style */
+.card .card-body .reviews .stars i {
+  //To be added
+  font-size: 12px;
+  color: var(--cardReviewsStarsStarFontColor);
+}
+
+/* Card Section Review Style */
+.card .card-body .reviews {
+  gap: var(--spacingSm);
+  margin-bottom: var(--spacing2Xl);
+}
+
+/* Card Section Review Number Style */
+.card .card-body .reviews .number {
+  font-size: var(--fontsizeXs);
+  line-height: (--fontlineheightXs);
+  font-weight: var(--fontsWeightRegular);
+  color: var(--cardReviewsNumberFontColor: );
+}
+
+/* Card Section Price Style */
+.card .card-body .price {
+  font-size: var(--fontSizeLg);
+  font-weight: var(--fontsWeightBold);
+  line-height: var(--fontLineHeightMd);
+  color: var(--cardPriceCurrentFontColor);
+  margin-right: var(--spacingSm);
+}
+
+/* Card Section Old Price Style */
+.card .card-body .old-price {
+  font-size: var(--sizingSm);
+  font-weight: var(--fontWeightRegular);
+  line-height: var(--fontlineheightXs);
+  color: var(--cardPriceOldFontColor);
+}
+
+/* /////////////// Don't Touch //////////// */
+
+.theme {
+  cursor: pointer;
+}
+
+.theme .theme-icon:hover {
+  border: 2px solid #d1cfd7;
+}
+
+.active-theme .theme-icon {
+  border: 2px solid #5f5d65;
+}
+
+.theme-icon {
+  background-color: #fdfdfe;
+  border-radius: 8px;
+  padding: 12px;
+  border: 2px solid #f3f2f7;
+}
