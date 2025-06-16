@@ -192,9 +192,9 @@ body {
 
 /* App Notification Toggle Style */
 .form-switch .form-check-input {
-  width: var(--sizingXl) !important;
-  height: var(--sizingMd) !important;
-  border-radius: var(--borderRadius2Xl);
+  width: var(--sizingXl) !important; 
+  height: var(--sizingLg) !important;/*Edit */
+  border-radius: var(--borderRadiusFull);/*Edit */
 }
 
 /* App Notification Toggle Unchecked Style */
