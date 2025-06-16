@@ -547,12 +547,12 @@ body {
 /* Pagination Section Link Default Style */
 .pagination .page-item .page-link {
   border-radius: var(--paginationItemBorderRadius) !important;
-  background-color: var(--paginationItemDefaultBackgroundColor);
-  color: var(--paginationItemDefaultFontColor);
-  padding: var(--spacingMd) var(--spacingMd);
-  font-size: var(--sizingSm);
-  line-height: var(--fontLineHeightSm);
-  font-weight: var(--fontsWeightNormal);
+  background-color: var(--paginationItemDefaultBackgroundColor) !important;
+  color: var(--paginationItemDefaultFontColor) !important;
+  padding: var(--spacingMd) var(--spacingMd) !important;
+  font-size: var(--sizingSm) !important;
+  line-height: var(--fontLineHeightSm) !important;
+  font-weight: var(--fontsWeightNormal) !important;
   border: none;
 }
 
