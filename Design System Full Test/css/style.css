@@ -365,11 +365,11 @@ body {
 }
 // Manal
 /* Select Section Title Style */
-.select .title {
+.select h6.title {
   font-weight: var(--fontsWeightRegular);
   font-size: var(--fontSizeSm);
   line-height: var(--fontLineHeightSm);
-  color: var(--sectionTitleFontColor);
+  color: var(--sectionTitleFontColor) !important;
   margin-bottom: var(--spacingMd);
 }
 
