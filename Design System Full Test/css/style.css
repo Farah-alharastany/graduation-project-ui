@@ -52,7 +52,7 @@ body {
 
 /* Avatar Small Style */
 .avatar-small {
-  height: var(--sizingMd);
+  height: var(--sizingLg);
   margin-right: var(--spacing3Xs);
 }
 
@@ -207,8 +207,8 @@ body {
 .form-switch .form-check-input::before {
   content: "";
   position: absolute;
-  top: var(--sizingXs); /*Edit */
-  left: var(--sizingXs); /*Edit */
+  top: var(--sizing2Xs); /*Edit */
+  left: var(--sizing2Xs); /*Edit */
   width: var(--sizingSm) !important; /*Edit */
   height: var(--sizingSm) !important; /*Edit */
   background-color: var(
@@ -228,7 +228,7 @@ body {
 .form-switch .form-check-input:checked::before {
   content: "";
   position: absolute;
-  top: var(--sizingXs);
+  top: var(--sizing2Xs);
   left: -6px;
   width: var(--sizingSm) !important;
   height: var(--sizingSm) !important;
@@ -365,7 +365,7 @@ body {
 }
 // Manal
 /* Select Section Title Style */
-.select h6.title {
+.select .title {
   font-weight: var(--fontsWeightRegular);
   font-size: var(--fontSizeSm);
   line-height: var(--fontLineHeightSm);
@@ -378,7 +378,7 @@ body {
   font-weight: var(--fontsWeightRegular);
   font-size: var(--fontSizeXs);
   line-height: var(--fontLineHeightXs);
-  color: var(--SelectedContentDescriptionFontColor);
+  color: var(--selectedContentDescriptionFontColor);
 }
 
 /* Select Section Price Style */
