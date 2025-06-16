@@ -15,7 +15,7 @@ body {
 .page-container {
   background-color: var(--pageContainerBackgroundColor);
   border-radius: var(--pageContainerBorderRaduis);
-  padding: var(--spacing5Xl) var(--spacing2Xl);
+  padding: var(--spacing5Xl) var(--spacing3Xl);
 }
 
 /* All Sections Shadow */
@@ -53,7 +53,7 @@ body {
 /* Avatar Small Style */
 .avatar-small {
   height: var(--sizingLg);
-  margin-right: var(--spacing3Xs);
+  margin-right: var(--spacing4Xs);
 }
 
 /* Meeting Card Style */
@@ -346,7 +346,7 @@ body {
   font-size: var(--fontSizeXs);
   margin-left: var(--spacingSm);
   position: relative;
-  top: var(--spacing2Xs);
+  top: var(--spacing3Xs);
 }
 
 /* Don't Touch */
@@ -492,7 +492,7 @@ body {
 /* Buttons Style */
 .btn {
   border-radius: var(--borderRadiusMd);
-  padding: var(--spacingLg) var(--spacing5Xl);
+  padding: var(--spacingLg) var(--spacing4Xl);
   font-size: var(--fontSizeSm);
   line-height: var(--fontLineHeightSm);
   font-weight: var(--fontsWeightNormal);
