@@ -354,6 +354,7 @@
   --effectNone: 0;
   --effectSm: 2;
   --effectMd: 4;
+  --effectLg: 16;
   --spacing4Xs: -4px;
   --spacing3Xs: -2px;
   --spacingNone: 0px;
@@ -655,13 +656,13 @@
   --colorSoftBase800: #adafb4;
   --colorSoftBase900: #8b8c90;
   --colorSoftBase1000: #6e6f72;
+  --sectionBackgroundColor: #ffffff;
+  --sectionBorderColor: #f4f3f5;
+  --sectionBorderRaduis: 8px;
   --sectionShadowColor: #d6d4e2;
   --sectionShadowX: 0px;
   --sectionShadowY: 2px;
   --sectionShadowBlur: 4px;
-  --sectionBorderColor: #f4f3f5;
-  --sectionBorderRaduis: 8px;
-  --sectionBackgroundColor: #ffffff;
   --sectionTitleFontColor: #403f44;
   --pageContainerBackgroundColor: #fafafc;
   --pageContainerBorderRaduis: 32px;
@@ -703,12 +704,12 @@
   --selectedContentDescriptionFontColor: #75747d;
   --selectedRadioButtonBorderColor: #916dff;
   --selectedBorderColor: #916dff;
-  --navigationTabsBorderRdaius: 8px;
+  --navigationTabsBorderRdaius: 4px;
   --navigationTabsNavLinkActiveBackgroundColor: #7b5dd9;
   --navigationTabsNavLinkActiveFontColor: #f2edff;
   --navigationTabsNavLinkHoverFontColor: #916dff;
   --navigationTabsNavLinkHoverBackgroundColor: #cdcbdc;
-  --navigationTabsNavLinkBorderRadius: 8px;
+  --navigationTabsNavLinkBorderRadius: 4px;
   --navigationTabsNavLinkDefaultFontColor: #403f44;
   --navigationTabsNavLinkDefaultBackgroundColor: #cdcbdc;
   --navigationTabsBackgroundColor: #cdcbdc;
@@ -783,14 +784,6 @@
   --paletteCollectionSecondary900BackgroundColor: #524f56;
   --footerLinkItemDefaultFontColor: #8f8b96;
   --footerLinkItemHoverFontColor: #403f44;
-  --cardBodyContentTitleFontColor: #403f44;
-  --cardBodyContentTextFontColor: #5c5b63;
-  --cardReviewsStarsStarFontColor: #f3ca54;
-  --cardReviewsNumberFontColor: #92909c;
-  --cardPriceCurrentFontColor: #916dff;
-  --cardPriceOldFontColor: #5c5b63;
-  --cardPaddingX: 8px;
-  --cardPaddingY: 8px;
   --alertItemBorderRadius: 16px;
   --alertItemPrimaryIconColor: #674db5;
   --alertItemPrimaryContentFontColor: #674db5;
@@ -808,4 +801,13 @@
   --alertItemDangerContentFontColor: #ad1c1c;
   --alertItemDangerBackgroundColor: #fee9e9;
   --alertItemDangerBorderColor: #fccbcb;
+  --cardImageSrc: url("../imgs/card-image-light.png");
+  --cardPaddingX: 8px;
+  --cardPaddingY: 8px;
+  --cardPriceCurrentFontColor: #916dff;
+  --cardPriceOldFontColor: #5c5b63;
+  --cardBodyContentTitleFontColor: #403f44;
+  --cardBodyContentTextFontColor: #5c5b63;
+  --cardReviewsStarsStarFontColor: #f3ca54;
+  --cardReviewsNumberFontColor: #92909c;
 }
