@@ -14,7 +14,7 @@ body {
 /* Page Container */
 .page-container {
   background-color: var(--pageContainerBackgroundColor);
-  border-radius: var(--pageContainerBorderRaduis);
+  border-radius: var(--pageContainerBorderRadius);
   padding: var(--spacing5Xl) var(--spacing4Xl);
 }
 

@@ -704,12 +704,12 @@
   --selectedContentDescriptionFontColor: #75747d;
   --selectedRadioButtonBorderColor: #916dff;
   --selectedBorderColor: #916dff;
-  --navigationTabsBorderRadius: 40px;
+  --navigationTabsBorderRadius: 8px;
   --navigationTabsNavLinkActiveBackgroundColor: #7b5dd9;
   --navigationTabsNavLinkActiveFontColor: #f2edff;
   --navigationTabsNavLinkHoverFontColor: #916dff;
   --navigationTabsNavLinkHoverBackgroundColor: #cdcbdc;
-  --navigationTabsNavLinkBorderRadius: 4px;
+  --navigationTabsNavLinkBorderRadius: 8px;
   --navigationTabsNavLinkDefaultFontColor: #403f44;
   --navigationTabsNavLinkDefaultBackgroundColor: #cdcbdc;
   --navigationTabsBackgroundColor: #cdcbdc;
