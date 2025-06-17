@@ -790,7 +790,7 @@ body {
 
 /* Card Section Style */
 .section.card {
-  padding: var(--cardPaddingX);
+  padding: var(--cardPaddingX) var(--cardPaddingY);
 }
 
 /* Card Section Image Style */
@@ -804,7 +804,7 @@ body {
 
 /* Card Section Body Style */
 .card .card-body {
-  padding: 20px 0px 12px;
+  padding: var(cardPaddingY)
 }
 
 /* Card Section Title Style */
@@ -820,7 +820,7 @@ body {
 .card .card-text {
   font-size: var(--fontSizeXs);
   font-weight: var(--fontsWeightRegular);
-  line-height: var(--fontLineHeightMd);
+  line-height: var(--fontLineHeightXs);
   color: var(--cardBodyContentTextFontColor);
   margin-bottom: var(--spacing2Xl);
 }
@@ -828,8 +828,7 @@ body {
 /* Card Section Stars Style */
 .card .card-body .reviews .stars {
   display: flex;
-  //To be added
-  gap: 2px;
+  gap: var(--spacing2Xs);
 }
 
 /* Card Section Starts Icons Style */
@@ -857,7 +856,7 @@ body {
 .card .card-body .price {
   font-size: var(--fontSizeLg);
   font-weight: var(--fontsWeightBold);
-  line-height: var(--fontLineHeightMd);
+  line-height: var(--fontLineHeightLg);
   color: var(--cardPriceCurrentFontColor);
   margin-right: var(--spacingSm);
 }
@@ -866,7 +865,7 @@ body {
 .card .card-body .old-price {
   font-size: var(--sizingSm);
   font-weight: var(--fontWeightRegular);
-  line-height: var(--fontlineheightXs);
+  line-height: var(--fontlineheightSm);
   color: var(--cardPriceOldFontColor);
 }
 
