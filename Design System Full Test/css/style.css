@@ -82,7 +82,16 @@ body {
 /* Meeting Card Primary Style */
 .meeting-card.primary {
   background-color: var(--meetingCardPrimaryBackgroundColor);
-  border-left: var(--borderWidthLg) var(--borderStylePrimary) #916dff !important;
+}
+
+[dir="ltr"] .meeting-card.primary {
+  border-left: var(--borderWidthLg) var(--borderStylePrimary)
+    var(--meetingCardPrimaryBorderLeftColor) !important;
+}
+[dir="rtl"] .meeting-card.primary {
+  border-right: var(--borderWidthLg) var(--borderStylePrimary)
+    var(--meetingCardPrimaryBorderLeftColor) !important;
+  border-left: none !important;
 }
 
 /* Meeting Card Primary Title Style */
@@ -104,10 +113,16 @@ body {
 /* Meeting Card Secondary Style  */
 .meeting-card.secondary {
   background-color: var(--meetingCardSecondaryBackgroundColor);
+}
+[dir="ltr"] .meeting-card.secondary {
   border-left: var(--borderWidthLg) var(--borderStylePrimary)
     var(--meetingCardSecondaryBorderLeftColor) !important;
 }
-
+[dir="rtl"] .meeting-card.secondary {
+  border-right: var(--borderWidthLg) var(--borderStylePrimary)
+    var(--meetingCardSecondaryBorderLeftColor) !important;
+  border-left: none !important;
+}
 /* Meeting Card Secondary Title Style */
 .meeting-card.secondary .title {
   color: var(--meetingCardSecondaryTitleFontColor);
@@ -127,9 +142,16 @@ body {
 /* Meeting Card Tertiary Style  */
 .meeting-card.tertiary {
   background-color: var(--meetingCardTertiaryBackgroundColor);
+  margin-bottom: var(--spacingNone);
+}
+[dir="ltr"] .meeting-card.tertiary {
   border-left: var(--borderWidthLg) var(--borderStylePrimary)
     var(--meetingCardTertiaryBorderLeftColor) !important;
-  margin-bottom: var(--spacingNone);
+}
+[dir="rtl"] .meeting-card.tertiary {
+  border-right: var(--borderWidthLg) var(--borderStylePrimary)
+    var(--meetingCardTertiaryBorderLeftColor) !important;
+  border-left: none !important;
 }
 
 /* Meeting Card Tertiary Title Style */
@@ -156,8 +178,11 @@ body {
 }
 
 /* App Notification Image Style */
-.apps-notifications img {
+[dir="ltr"] .apps-notifications img {
   margin-right: var(--spacingMd);
+}
+[dir="rtl"] .apps-notifications img {
+  margin-left: var(--spacingMd);
 }
 
 /* App Notification Title Style */
@@ -276,9 +301,6 @@ body {
   color: var(--sectionTitleFontColor);
   margin-bottom: var(--spacingXs);
 }
-.header .name::before {
-  content: var(--name);
-}
 /* Header Section Role Style */
 .header .role {
   font-size: var(--fontSizeSm);
@@ -319,9 +341,13 @@ body {
   font-size: var(--fontSizeMd);
   padding: var(--spacingMd);
   border-radius: var(--borderRadiusXs);
+}
+[dir="rtl"] .navbar .logo-icon {
+  margin-left: var(--spacingMd);
+}
+[dir="ltr"] .navbar .logo-icon {
   margin-right: var(--spacingMd);
 }
-
 /* Navbar Section Link Default Style */
 .nav-item .nav-link {
   color: var(--navbarMenuNavLinkDefaultFontColor);
@@ -351,7 +377,12 @@ body {
   position: relative;
   top: var(--spacing3Xs);
 }
-
+[dir="ltr"] .nav-item i {
+  margin-left: var(--spacingSm);
+}
+[dir="rtl"] .nav-item i {
+  margin-right: var(--spacingSm);
+}
 /* Don't Touch */
 .nav-link.dropdown-toggle::after {
   display: none;
@@ -725,8 +756,11 @@ body {
 }
 
 /* Alert Section Card Icon Style */
-.icon {
+[dir="ltr"] .icon {
   margin-right: var(--spacingLg);
+}
+[dir="rtl"] .icon {
+  margin-left: var(--spacingLg);
 }
 
 /* Alert Section Card Content Style */
@@ -903,9 +937,7 @@ body {
 .language-menu {
   border-width: 2px;
 }
-/ */
-
-.theme {
+/ */ .theme {
   cursor: pointer;
 }
 
@@ -922,4 +954,15 @@ body {
   border-radius: 8px;
   padding: 12px;
   border: 2px solid #f3f2f7;
+}
+
+/////// Language //////
+.header .name::before {
+  content: var(--name);
+}
+.meetings-list-title::before {
+  content: var(--meetings-list-title);
+}
+[dir="rtl"] #custom-item {
+  margin-right: 12px;
 }

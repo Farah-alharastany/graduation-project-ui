@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -115,7 +115,7 @@
         <!-- Chat List -->
         <div class="col-md-3">
           <div class="section bg-white rounded shadow-sm">
-            <h6 class="section-title">My Meetings</h6>
+            <h6 class="section-title meetings-list-title"></h6>
 
             <!-- Meeting 1 -->
             <div class="meeting-card primary border-start">
@@ -213,7 +213,7 @@
                   src="imgs/google.png"
                   alt="Google"
                   width="24"
-                  class="me-2"
+                  class="app-icon"
                 />
                 <span class="title">Google</span>
               </div>
@@ -234,7 +234,7 @@
                   src="imgs/twitter.png"
                   alt="Twitter"
                   width="24"
-                  class="me-2"
+                  class="app-icon"
                 />
                 <span class="title">X (Twitter)</span>
               </div>
@@ -254,7 +254,7 @@
                   src="imgs/linkedin.png"
                   alt="LinkedIn"
                   width="24"
-                  class="me-2"
+                  class="app-icon"
                 />
                 <span class="title">LinkedIn</span>
               </div>
@@ -274,7 +274,7 @@
                   src="imgs/dribbble.png"
                   alt="Dribbble"
                   width="24"
-                  class="me-2"
+                  class="app-icon"
                 />
                 <span class="title">Dribbble</span>
               </div>
@@ -297,7 +297,7 @@
                   src="imgs/behance.png"
                   alt="Behance"
                   width="24"
-                  class="me-2"
+                  class="app-icon"
                 />
                 <span class="title">Behance</span>
               </div>
@@ -694,85 +694,93 @@
     </div>
 
     <script>
-document.addEventListener("DOMContentLoaded", function () {
-  // Theme switching (your existing code)
-  const themeIcons = document.querySelectorAll(".theme-icon");
-  const themeLink = document.getElementById("theme-style");
+      document.addEventListener("DOMContentLoaded", function () {
+        // Theme switching (your existing code)
+        const themeIcons = document.querySelectorAll(".theme-icon");
+        const themeLink = document.getElementById("theme-style");
 
-  themeIcons.forEach((icon) => {
-    icon.addEventListener("click", () => {
-      const selectedTheme = icon.getAttribute("data-theme");
-      themeLink.setAttribute("href", `css/variables-${selectedTheme}.css`);
+        themeIcons.forEach((icon) => {
+          icon.addEventListener("click", () => {
+            const selectedTheme = icon.getAttribute("data-theme");
+            themeLink.setAttribute(
+              "href",
+              `css/variables-${selectedTheme}.css`
+            );
 
-      // Remove 'active-theme' from all theme containers
-      document.querySelectorAll(".theme").forEach((theme) => {
-        theme.classList.remove("active-theme");
+            // Remove 'active-theme' from all theme containers
+            document.querySelectorAll(".theme").forEach((theme) => {
+              theme.classList.remove("active-theme");
+            });
+
+            // Add 'active-theme' to the clicked theme container
+            icon.closest(".theme").classList.add("active-theme");
+
+            // Store theme preference
+            localStorage.setItem("selectedTheme", selectedTheme);
+          });
+        });
+
+        // Language switching (new code)
+        const languageLinks = document.querySelectorAll("[data-lang]");
+        const languageStyle = document.getElementById("language-style");
+        const languageText = document.querySelector(".language-text");
+        const htmlElement = document.documentElement;
+
+        languageLinks.forEach((link) => {
+          link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const selectedLang = link.getAttribute("data-lang");
+
+            // Update language stylesheet
+            languageStyle.setAttribute("href", `css/${selectedLang}.css`);
+
+            // Update UI
+            languageLinks.forEach((l) => l.classList.remove("active"));
+            link.classList.add("active");
+            languageText.textContent =
+              selectedLang === "english" ? "English" : "العربية";
+
+            // Update RTL/LTR
+            if (selectedLang === "arabic") {
+              htmlElement.dir = "rtl";
+              htmlElement.lang = "ar";
+              document.body.classList.add("rtl");
+            } else {
+              htmlElement.dir = "ltr";
+              htmlElement.lang = "en";
+              document.body.classList.remove("rtl");
+            }
+
+            // Store language preference
+            localStorage.setItem("selectedLanguage", selectedLang);
+          });
+        });
+
+        // Load saved preferences
+        const savedTheme = localStorage.getItem("selectedTheme") || "light";
+        const savedLang = localStorage.getItem("selectedLanguage") || "english";
+
+        // Apply saved theme
+        themeLink.setAttribute("href", `css/variables-${savedTheme}.css`);
+        document
+          .querySelector(`.theme-icon[data-theme="${savedTheme}"]`)
+          ?.closest(".theme")
+          ?.classList.add("active-theme");
+
+        // Apply saved language
+        languageStyle.setAttribute("href", `css/${savedLang}.css`);
+        document
+          .querySelector(`[data-lang="${savedLang}"]`)
+          ?.classList.add("active");
+        languageText.textContent =
+          savedLang === "English" ? "English" : "العربية";
+
+        if (savedLang === "arabic") {
+          htmlElement.dir = "rtl";
+          htmlElement.lang = "ar";
+          document.body.classList.add("rtl");
+        }
       });
-
-      // Add 'active-theme' to the clicked theme container
-      icon.closest(".theme").classList.add("active-theme");
-      
-      // Store theme preference
-      localStorage.setItem("selectedTheme", selectedTheme);
-    });
-  });
-
-  // Language switching (new code)
-  const languageLinks = document.querySelectorAll("[data-lang]");
-  const languageStyle = document.getElementById("language-style");
-  const languageText = document.querySelector(".language-text");
-  const htmlElement = document.documentElement;
-
-  languageLinks.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const selectedLang = link.getAttribute("data-lang");
-      
-      // Update language stylesheet
-      languageStyle.setAttribute("href", `css/${selectedLang}.css`);
-      
-      // Update UI
-      languageLinks.forEach(l => l.classList.remove("active"));
-      link.classList.add("active");
-      languageText.textContent = selectedLang === "english" ? "English" : "العربية";
-      
-      // Update RTL/LTR
-      if (selectedLang === "arabic") {
-        htmlElement.dir = "rtl";
-        htmlElement.lang = "ar";
-        document.body.classList.add("rtl");
-      } else {
-        htmlElement.dir = "ltr";
-        htmlElement.lang = "en";
-        document.body.classList.remove("rtl");
-      }
-      
-      // Store language preference
-      localStorage.setItem("selectedLanguage", selectedLang);
-    });
-  });
-
-  // Load saved preferences
-  const savedTheme = localStorage.getItem("selectedTheme") || "light";
-  const savedLang = localStorage.getItem("selectedLanguage") || "english";
-  
-  // Apply saved theme
-  themeLink.setAttribute("href", `css/variables-${savedTheme}.css`);
-  document.querySelector(`.theme-icon[data-theme="${savedTheme}"]`)
-    ?.closest(".theme")
-    ?.classList.add("active-theme");
-  
-  // Apply saved language
-  languageStyle.setAttribute("href", `css/${savedLang}.css`);
-  document.querySelector(`[data-lang="${savedLang}"]`)?.classList.add("active");
-  languageText.textContent = savedLang === "English" ? "English" : "العربية";
-  
-  if (savedLang === "arabic") {
-    htmlElement.dir = "rtl";
-    htmlElement.lang = "ar";
-    document.body.classList.add("rtl");
-  }
-});
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
