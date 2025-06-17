@@ -1,4 +1,51 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
 :root {
-  --name: "Osama Eldrieny";
-  --meetings-list-title: "Meetings list"
+  --cardBodyTitleContent: "Air Pods Max";
+  --cardBodyTextContent: "Spatial audio.Noice cancelled.All-day comfort";
+  --cardPriceOldContent: "$549.00";
+  --cardPriceCurrentContent: "$500.00";
+  --cardReviewsNumberContent: "(420 reviews)";
+  --navbarBrandLogoNameContent: "Design System";
+  --navbarMenuNavLink1Content: "Home";
+  --navbarMenuNavLink2Content: "Themes";
+  --navbarMenuNavLink3Content: "More";
+  --meetingsListTitleContent: "Meetings";
+  --meetingsListPrimaryTitleContent: "Design Sync";
+  --meetingsListPrimaryTimeContent: "-1 AM";
+  --meetingsListSecondaryTitleContent: "Design Sync";
+  --meetingsListSecondaryTimeContent: "-1 AM";
+  --meetingsListTertiaryTitleContent: "Design Sync";
+  --meetingsListTertiaryTimeContent: "-1 AM";
+  --inputSearchContent: "Type here";
+  --navigationTabsNavLink1Content: "Home";
+  --navigationTabsNavLink2Content: "Profile";
+  --navigationTabsNavLink3Content: "Messages";
+  --buttonPrimaryContent: "Button";
+  --buttonSecondaryContent: "Button";
+  --alertsAlertItemSuccessContent: "This is a primary alert -- check it out!";
+  --alertsAlertItemPrimaryContent: "There are 9 new messages";
+  --alertsAlertItemWarningContent: "Click to verify your email";
+  --alertsAlertItemDangerContent: "Access denied, contact support";
+  --alertsTitleContent: "Alerts";
+  --selectedContentDetailsTitleContent: "Basic";
+  --selectedContentPriceTitleContent: "Free";
+  --selectedContentDescriptionContent: "Fetch project with team";
+  --bodyDirection: "ltr";
+  --footerDirection: "LTR";
+  --footerLinkItem1Content: "License";
+  --footerTitleContent: "Osama ElDrieny © 2025";
+  --footerLinkItem2Content: "Help";
+  --footerLinkItem3Content: "Policy";
+  --headerDiscriptionContent: "Design System and tokens course";
+  --headerRoleContent: "Designer";
+  --headerTitleContent: "Osama Eldrieny";
+  --appsNotificationsNotificationItem5TitleContent: "Behance";
+  --appsNotificationsNotificationItem2TitleContent: "X (Twitter)";
+  --appsNotificationsNotificationItem1TitleContent: "Google";
+  --appsNotificationsNotificationItem4TitleContent: "Dribbble";
+  --appsNotificationsNotificationItem3TitleContent: "Linkedin";
+  --appsNotificationsTitleContent: "Apps Notifications";
 }

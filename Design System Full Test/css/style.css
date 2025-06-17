@@ -956,12 +956,77 @@ body {
   border: 2px solid #f3f2f7;
 }
 
-/////// Language //////
-.header .name::before {
-  content: var(--name);
-}
 .meetings-list-title::before {
-  content: var(--meetings-list-title);
+  content: var(--meetingsListTitleContent);
+}
+.meeting-primary-title::before {
+  content: var(--meetingsListPrimaryTitleContent);
+}
+.meeting-primary-time::before {
+  content: var(--meetingsListPrimaryTimeContent);
+}
+.meeting-secondary-title::before {
+  content: var(--meetingsListSecondaryTitleContent);
+}
+.meeting-secondary-time::before {
+  content: var(--meetingsListSecondaryTimeContent);
+}
+.meeting-tertiary-title::before {
+  content: var(--meetingsListTertiaryTitleContent);
+}
+.meeting-tertiary-time::before {
+  content: var(--meetingsListTertiaryTimeContent);
+}
+.app-list-title::before {
+  content: var(--appsNotificationsTitleContent);
+}
+.app-title-1::before {
+  content: var(--appsNotificationsNotificationItem1TitleContent);
+}
+.app-title-2::before {
+  content: var(--appsNotificationsNotificationItem2TitleContent);
+}
+.app-title-3::before {
+  content: var(--appsNotificationsNotificationItem3TitleContent);
+}
+.app-title-4::before {
+  content: var(--appsNotificationsNotificationItem4TitleContent);
+}
+.app-title-5::before {
+  content: var(--appsNotificationsNotificationItem5TitleContent);
+}
+.header .name::before {
+  content: var(--headerTitleContent);
+}
+.header .role::before {
+  content: var(--headerRoleContent);
+}
+.header .title::before {
+  content: var(--headerDiscriptionContent);
+}
+.logo-name::before {
+  content: var(--navbarBrandLogoNameContent);
+}
+.nav-item .nav-link.link-1::before {
+  content: var(--navbarMenuNavLink1Content);
+}
+.nav-item .nav-link.link-2::before {
+  content: var(--navbarMenuNavLink2Content);
+}
+.nav-item .nav-link.link-3::before {
+  content: var(--navbarMenuNavLink3Content);
+}
+.nav-tabs .nav-link.link-1::before {
+  content: var(--navigationTabsNavLink1Content);
+}
+.nav-tabs .nav-link.link-2::before {
+  content: var(--navigationTabsNavLink2Content);
+}
+.nav-tabs .nav-link.link-3::before {
+  content: var(--navigationTabsNavLink3Content);
+}
+.alert-list-title::before {
+  content: var(--appsNotificationsTitleContent);
 }
 [dir="rtl"] #custom-item {
   margin-right: 12px;

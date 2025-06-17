@@ -1,4 +1,51 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
 :root {
-  --name: "أسامة الدريني";
-  --meetings-list-title: "قائمة الاجتمعات";
+  --cardBodyTitleContent: "ايربودز ماكس";
+  --cardBodyTextContent: "صوت محيطي.إلغاء الضوضاء.راحة طول اليوم";
+  --cardPriceOldContent: "$549.00";
+  --cardPriceCurrentContent: "$500.00";
+  --cardReviewsNumberContent: "420 تقييم";
+  --navbarBrandLogoNameContent: "نظام التصميم";
+  --navbarMenuNavLink1Content: "الرئيسية";
+  --navbarMenuNavLink2Content: "السمات";
+  --navbarMenuNavLink3Content: "المزيد";
+  --meetingsListTitleContent: "الاجتماعات";
+  --meetingsListPrimaryTitleContent: "مزامنة التصميم";
+  --meetingsListPrimaryTimeContent: "9-10 صباحًا";
+  --meetingsListSecondaryTitleContent: "مزامنة التصميم";
+  --meetingsListSecondaryTimeContent: "9-10 صباحًا";
+  --meetingsListTertiaryTitleContent: "مزامنة التصميم";
+  --meetingsListTertiaryTimeContent: "9-10 صباحًا";
+  --inputSearchContent: "اكتب هنا";
+  --navigationTabsNavLink1Content: "الرئيسية";
+  --navigationTabsNavLink2Content: "الملف الشخصي";
+  --navigationTabsNavLink3Content: "الرسائل";
+  --buttonPrimaryContent: "زر";
+  --buttonSecondaryContent: "زر";
+  --alertsAlertItemSuccessContent: "هذا تنبيه أساسي - تحقق من ذلك!";
+  --alertsAlertItemPrimaryContent: "هناك 9 رسائل جديدة";
+  --alertsAlertItemWarningContent: "انقر للتحقق من بريدك الإلكتروني";
+  --alertsAlertItemDangerContent: "تم رفض الوصول، اتصل بالدعم";
+  --alertsTitleContent: "التنبيهات";
+  --selectedContentDetailsTitleContent: "أساسي";
+  --selectedContentPriceTitleContent: "مجاني";
+  --selectedContentDescriptionContent: "جلب المشروع مع الفريق";
+  --bodyDirection: "rtl";
+  --footerDirection: "RTL";
+  --footerLinkItem1Content: "ترخيص";
+  --footerTitleContent: "أسامة الدريني © 2025";
+  --footerLinkItem2Content: "مساعدة";
+  --footerLinkItem3Content: "سياسة";
+  --headerDiscriptionContent: "دورة نظام التصميم والرموز";
+  --headerRoleContent: "المصمم";
+  --headerTitleContent: "أسامة الدريني";
+  --appsNotificationsNotificationItem5TitleContent: "بيهانس";
+  --appsNotificationsNotificationItem2TitleContent: "X (تويتر)";
+  --appsNotificationsNotificationItem1TitleContent: "قوقل";
+  --appsNotificationsNotificationItem4TitleContent: "دريبل";
+  --appsNotificationsNotificationItem3TitleContent: "لينكدن";
+  --appsNotificationsTitleContent: "إشعارات التطبيقات";
 }
