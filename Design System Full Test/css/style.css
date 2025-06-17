@@ -409,7 +409,7 @@ body {
 .nav-tabs {
   background-color: var(--navigationTabsBackgroundColor);
   padding: var(--spacingXs) var(--spacingXs);
-  border-radius: var(--borderRadiusXs);
+  border-radius: var(--navigationTabsBorderRdaius);
   --bs-nav-tabs-border-width: initial;
   border: var(--borderWidthNone);
 }
@@ -419,7 +419,7 @@ body {
   background-color: var(--navigationTabsNavLinkDefaultBackgroundColor);
   color: var(--navigationTabsNavLinkDefaultFontColor);
   padding: var(--spacingSm) var(--spacingMd) !important;
-  border-radius: var(--borderRadius2Xs);
+  border-radius: var(--navigationTabsBorderRdaius);
   border: var(--borderWidthNone);
 }
 
@@ -427,7 +427,7 @@ body {
 .nav-tabs .nav-link:hover {
   background-color: var(--navigationTabsNavLinkHoverBackgroundColor);
   color: var(--navigationTabsNavLinkHoverFontColor);
-  border-radius: var(--borderRadius2Xs);
+  border-radius: var(--navigationTabsBorderRdaius);
   border: var(--borderWidthNone);
 }
 
@@ -435,7 +435,7 @@ body {
 .nav-tabs .nav-link.active {
   background-color: var(--navigationTabsNavLinkActiveBackgroundColor);
   color: var(--navigationTabsNavLinkActiveFontColor);
-  border-radius: var(--borderRadius2Xs);
+  border-radius: var(--navigationTabsBorderRdaius);
   border: var(--borderWidthNone);
 }
 
