@@ -362,9 +362,9 @@ body {
   margin-bottom: var(--spacingNone);
   padding: var(--spacing2Xl) var(--spacing2Xl);
   border: var(--borderWidthMd) var(--borderStylePrimary)
-    var(--selectedRadioButtonBorderColor); /* Ask Farah */
+    var(--selectedRadioButtonBorderColor); 
 }
-// Manal
+
 /* Select Section Title Style */
 #custom-item {
   font-weight: var(--fontsWeightRegular);
@@ -544,30 +544,29 @@ body {
 .pagination {
   gap: var(--spacingXs);
 }
-//Alaa
 /* Pagination Section Link Default Style */
 /* Pagination Section Link Default Style */
 .pagination .page-item .page-link {
-  border-radius: 8px;
-  background-color: #cecbdc;
-  color: #3f404d;
-  padding: 12px 12px;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 500;
+  border-radius: var(--paginationItemBorderRadius);
+  background-color: var(--paginationItemDefaultBackgroundColor);
+  color: var(--paginationItemDefaultFontColor);
+  padding: var(--spacingMd) var(--spacingMd);
+  font-size: var(--fontSizeSm);
+  line-height: var(--fontLineHeightSm);
+  font-weight: var(--fontsWeightNormal);
   border: none;
 }
 
 /* Pagination Section Link Hover Style */
 .pagination .page-item .page-link:hover {
-  background-color: #b9b6c7;
-  color: #3f404d;
+  background-color: var(--paginationItemHoverBackgroundColor);
+  color: var(--paginationItemHoverFontColor);
 }
 
 /* Pagination Section Link Active Style */
 .pagination .page-item.active .page-link {
-  background-color: #dfd4ff;
-  color: #916dff;
+  background-color: var(--paginationItemActiveBackgroundColor);
+  color: var(--paginationItemActiveFontColor);
 }
 
 
@@ -712,7 +711,7 @@ body {
 }
 
 /* ////////////////////////////   Alerts Section Style Start Here   ////////////////////////////  */
-//Ayat
+
 /* Alert Section Card Style */
 .alert {
   padding: var(--spacingXl);
