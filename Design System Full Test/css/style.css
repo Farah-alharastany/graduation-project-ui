@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 
 @import "variables-light.css";
 
@@ -60,7 +60,7 @@ body {
 .meeting-card {
   padding: var(--spacing2Xl);
   margin-bottom: var(--spacingMd);
-  border-radius: var(--meetingCardBorderRaduis);
+  border-radius: var(--meetingCardBorderRadius);
 }
 
 /* Meeting Card Title Style */
@@ -276,7 +276,9 @@ body {
   color: var(--sectionTitleFontColor);
   margin-bottom: var(--spacingXs);
 }
-
+.header .name::before {
+  content: var(--name);
+}
 /* Header Section Role Style */
 .header .role {
   font-size: var(--fontSizeSm);
@@ -322,19 +324,19 @@ body {
 
 /* Navbar Section Link Default Style */
 .nav-item .nav-link {
-  color: var(--navbarContentNavLinkDefaultFontColor);
+  color: var(--navbarMenuNavLinkDefaultFontColor);
   font-size: var(--fontSizeSm);
   font-weight: var(--fontWeightRegular);
   line-height: var(--fontLineHeightSm);
   background-color: transparent;
   padding: var(--spacingMd) var(--spacingLg) !important;
-  border-radius: var(--navbarContentNavLinkBorderRadius);
+  border-radius: var(--navbarMenuNavLinkBorderRadius);
 }
 
 /* Navbar Section Link Hover Style */
 .nav-item .nav-link:hover {
-  color: var(--navbarContentNavLinkHoverFontColor);
-  background-color: var(--navbarContentNavLinkHoverBackgroundColor)
+  color: var(--navbarMenuNavLinkHoverFontColor);
+  background-color: var(--navbarMenuNavLinkHoverBackgroundColor);
 }
 
 /* Navbar Sections Links Gap */
@@ -362,7 +364,7 @@ body {
   margin-bottom: var(--spacingNone);
   padding: var(--spacing2Xl) var(--spacing2Xl);
   border: var(--borderWidthMd) var(--borderStylePrimary)
-    var(--selectedRadioButtonBorderColor); 
+    var(--selectedRadioButtonBorderColor);
 }
 
 /* Select Section Title Style */
@@ -402,14 +404,19 @@ body {
   background-color: var(--sectionBackgroundColor);
   border-color: var(--selectedBorderColor);
 }
-
+.form-check-input[type="radio"] {
+  border-width: var(--borderWidthLg);
+}
+.form-check-input:checked[type="radio"] {
+  --bs-form-check-bg-image: none !important;
+}
 /* ////////////////////////////   Tabs Section Style Start Here   ////////////////////////////  */
 
 /* Tabs Section Style */
 .nav-tabs {
   background-color: var(--navigationTabsBackgroundColor);
   padding: var(--spacingXs) var(--spacingXs);
-  border-radius: var(--navigationTabsBorderRdaius);
+  border-radius: var(--navigationTabsBorderRadius);
   --bs-nav-tabs-border-width: initial;
   border: var(--borderWidthNone);
 }
@@ -419,7 +426,7 @@ body {
   background-color: var(--navigationTabsNavLinkDefaultBackgroundColor);
   color: var(--navigationTabsNavLinkDefaultFontColor);
   padding: var(--spacingSm) var(--spacingMd) !important;
-  border-radius: var(--navigationTabsBorderRdaius);
+  border-radius: var(--navigationTabsNavLinkBorderRadius);
   border: var(--borderWidthNone);
 }
 
@@ -427,7 +434,7 @@ body {
 .nav-tabs .nav-link:hover {
   background-color: var(--navigationTabsNavLinkHoverBackgroundColor);
   color: var(--navigationTabsNavLinkHoverFontColor);
-  border-radius: var(--navigationTabsBorderRdaius);
+  border-radius: var(--navigationTabsNavLinkBorderRadius);
   border: var(--borderWidthNone);
 }
 
@@ -435,7 +442,7 @@ body {
 .nav-tabs .nav-link.active {
   background-color: var(--navigationTabsNavLinkActiveBackgroundColor);
   color: var(--navigationTabsNavLinkActiveFontColor);
-  border-radius: var(--navigationTabsBorderRdaius);
+  border-radius: var(--navigationTabsNavLinkBorderRadius);
   border: var(--borderWidthNone);
 }
 
@@ -569,8 +576,6 @@ body {
   color: var(--paginationItemActiveFontColor);
 }
 
-
-
 /* ////////////////////////////   Color Palette Section Style Start Here   ////////////////////////////  */
 
 /* Palette Section Style */
@@ -701,13 +706,13 @@ body {
   font-size: var(--fontSizeSm);
   line-height: var(--fontLineHeightSm);
   font-weight: var(--fontWeightBold);
-  color: var(--footerLinkItemDefaultFontColor);
+  color: var(--footerMenuLinkItemDefaultFontColor);
   padding: var(--spacingMd) var(--spacingSm);
 }
 
 /* Footer Section Links Hover style */
 .footer .link:hover {
-  color: var(--footerLinkItemHoverFontColor);
+  color: var(--footerMenuLinkItemHoverFontColor);
 }
 
 /* ////////////////////////////   Alerts Section Style Start Here   ////////////////////////////  */
@@ -871,6 +876,34 @@ body {
 }
 
 /* /////////////// Don't Touch //////////// */
+
+.theme {
+  cursor: pointer;
+}
+
+.theme .theme-icon:hover {
+  border: 2px solid #d1cfd7;
+}
+
+.active-theme .theme-icon {
+  border: 2px solid #5f5d65;
+}
+
+.theme-icon {
+  background-color: #fdfdfe;
+  border-radius: 8px;
+  padding: 12px;
+  border: 2px solid #f3f2f7;
+}
+.language-selector {
+  transition: all 0.3s ease;
+  border-width: 2px;
+}
+
+.language-menu {
+  border-width: 2px;
+}
+/ */
 
 .theme {
   cursor: pointer;
