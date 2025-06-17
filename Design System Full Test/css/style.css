@@ -1026,8 +1026,57 @@ body {
   content: var(--navigationTabsNavLink3Content);
 }
 .alert-list-title::before {
-  content: var(--appsNotificationsTitleContent);
+  content: var(--alertsTitleContent);
+}
+.alert-primary .content::before {
+  content: var(--alertsAlertItemPrimaryContent);
+}
+.alert-success .content::before {
+  content: var(--alertsAlertItemSuccessContent);
+}
+.alert-warning .content::before {
+  content: var(--alertsAlertItemWarningContent);
+}
+.alert-danger .content::before {
+  content: var(--alertsAlertItemDangerContent);
 }
 [dir="rtl"] #custom-item {
   margin-right: 12px;
+}
+#custom-item::before {
+  content: var(--selectedContentDetailsTitleContent);
+}
+.content .price::before {
+  content: var(--selectedContentPriceTitleContent);
+}
+.content .desc::before {
+  content: var(--selectedContentDescriptionContent);
+}
+.btn.btn-primary::before {
+  content: var(--buttonPrimaryContent);
+}
+.btn.btn-secondary::before {
+  content: var(--buttonSecondaryContent);
+}
+
+.card-title::before {
+  content: var(--cardBodyTitleContent);
+}
+.card-text::before {
+  content: var(--cardBodyTextContent);
+}
+.reviews .number::before {
+  content: var(--cardReviewsNumberContent);
+}
+.footer .section-title::before {
+  content: var(--footerTitleContent);
+}
+.footer .link.link-1::before {
+  content: var(--footerLinkItem1Content);
+}
+.footer .link.link-2::before {
+  content: var(--footerLinkItem2Content);
+}
+.footer .link.link-3::before {
+  content: var(--footerLinkItem3Content);
 }
