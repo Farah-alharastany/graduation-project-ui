@@ -15,7 +15,7 @@ body {
 .page-container {
   background-color: var(--pageContainerBackgroundColor);
   border-radius: var(--pageContainerBorderRaduis);
-  padding: var(--spacing5Xl) var(--spacing3Xl);
+  padding: var(--spacing5Xl) var(--spacing4Xl);
 }
 
 /* All Sections Shadow */
@@ -367,7 +367,7 @@ body {
 
 /* Select Section Title Style */
 #custom-item {
-  font-weight: var(--fontsWeightRegular);
+  font-weight: var(--fontsWeightNormal);
   font-size: var(--fontSizeSm);
   line-height: var(--fontLineHeightSm);
   color: var(--sectionTitleFontColor) !important;
@@ -399,7 +399,7 @@ body {
 
 /* Select Section Radio Buton Style */
 .form-check-input:checked {
-  background-color: var(--selectedRadioButtonBorderColor);
+  background-color: var(--sectionBackgroundColor);
   border-color: var(--selectedBorderColor);
 }
 
@@ -443,10 +443,10 @@ body {
 
 /* Input Field Default Style */
 .form-control {
-  background-color: var(--inputSearchDefaultBackgroundColor);
+  background-color: var(--sectionBackgroundColor);
   border: var(--borderWidthSm) var(--borderStylePrimary)
     var(--inputSearchDefaultBorderColor);
-  border-radius: var(--borderRadiusXs);
+  border-radius: var(--inputSearchDefaultBorderRadius);
   padding: var(--spacingSm) var(--spacingLg);
   font-size: var(--fontSizeSm);
   line-height: var(--fontLineHeightSm);
@@ -464,7 +464,7 @@ body {
 
 /* Input Field Hover Style */
 .form-control:hover {
-  background-color: var(--inputSearchHoverBackgroundColor);
+  background-color: var(--sectionBackgroundColor);
   border-color: var(--inputSearchHoverBorderColor);
 }
 
@@ -476,7 +476,7 @@ body {
 
 /* Input Field Focus Style */
 .form-control:focus {
-  background-color: var(--inputSearchFocusBackgroundColor);
+  background-color: var(--sectionBackgroundColor);
   border-color: var(--inputSearchFocusBorderColor);
   outline: none;
   box-shadow: none;
@@ -492,8 +492,8 @@ body {
 
 /* Buttons Style */
 .btn {
-  border-radius: var(--borderRadiusMd);
-  padding: var(--spacingLg) var(--spacing4Xl);
+  border-radius: var(--buttonBorderRadius);
+  padding: var(--spacingMd) var(--spacing4Xl);
   font-size: var(--fontSizeSm);
   line-height: var(--fontLineHeightSm);
   font-weight: var(--fontsWeightNormal);
@@ -702,7 +702,7 @@ body {
   line-height: var(--fontLineHeightSm);
   font-weight: var(--fontWeightBold);
   color: var(--footerLinkItemDefaultFontColor);
-  padding: var(--spacingSm) var(--spacingMd);
+  padding: var(--spacingMd) var(--spacingSm);
 }
 
 /* Footer Section Links Hover style */
