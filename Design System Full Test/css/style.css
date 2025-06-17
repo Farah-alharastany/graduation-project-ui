@@ -830,14 +830,12 @@ body {
 /* Card Section Stars Style */
 .card .card-body .reviews .stars {
   display: flex;
-  //To be added
-  gap: 2px;
+  gap: var(--spacing2Xs);
 }
 
 /* Card Section Starts Icons Style */
 .card .card-body .reviews .stars i {
-  //To be added
-  font-size: 12px;
+  font-size: var(--fontSizeXs);
   color: var(--cardReviewsStarsStarFontColor);
 }
 
