@@ -175,7 +175,7 @@
 
             <!-- Meeting 3 -->
             <div class="meeting-card tertiary border-start">
-              <h6 class="title  meeting-tertiary-title"></h6>
+              <h6 class="title meeting-tertiary-title"></h6>
               <p class="time meeting-tertiary-time"></p>
               <div class="d-flex">
                 <img
@@ -370,7 +370,7 @@
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                   <i class="fa-solid fa-chevron-down"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                   </a>
                   <ul
                     class="dropdown-menu dropdown-menu-end"
@@ -420,9 +420,11 @@
               <div>
                 <ul class="nav nav-tabs d-flex justify-content-between">
                   <li class="nav-item">
-                    <a class="nav-link link-1 active" aria-current="page" href="#"
-                      ></a
-                    >
+                    <a
+                      class="nav-link link-1 active"
+                      aria-current="page"
+                      href="#"
+                    ></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link link-2" href="#"></a>
@@ -433,13 +435,12 @@
                 </ul>
               </div>
 
-              <div>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Type here"
-                />
-              </div>
+              <input
+                id="searchInput"
+                type="text"
+                class="form-control"
+                placeholder=""
+              />
             </div>
 
             <div class="d-flex mt-3">
@@ -602,8 +603,7 @@
                 />
               </svg>
 
-              <div class="content">
-              </div>
+              <div class="content"></div>
             </div>
 
             <!-- Warning Alert -->
@@ -647,8 +647,7 @@
                 />
               </svg>
 
-              <div class="content">
-              </div>
+              <div class="content"></div>
             </div>
           </div>
 
@@ -662,8 +661,7 @@
             <div class="card-body">
               <!-- Title -->
               <h5 class="card-title"></h5>
-              <p class="card-text">
-              </p>
+              <p class="card-text"></p>
 
               <!-- Rating & Reviews -->
               <div class="reviews d-flex align-items-center">
@@ -692,7 +690,6 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // Theme switching (your existing code)
         const themeIcons = document.querySelectorAll(".theme-icon");
         const themeLink = document.getElementById("theme-style");
 
@@ -704,20 +701,15 @@
               `css/variables-${selectedTheme}.css`
             );
 
-            // Remove 'active-theme' from all theme containers
             document.querySelectorAll(".theme").forEach((theme) => {
               theme.classList.remove("active-theme");
             });
-
-            // Add 'active-theme' to the clicked theme container
             icon.closest(".theme").classList.add("active-theme");
 
-            // Store theme preference
             localStorage.setItem("selectedTheme", selectedTheme);
           });
         });
 
-        // Language switching (new code)
         const languageLinks = document.querySelectorAll("[data-lang]");
         const languageStyle = document.getElementById("language-style");
         const languageText = document.querySelector(".language-text");
@@ -728,16 +720,13 @@
             e.preventDefault();
             const selectedLang = link.getAttribute("data-lang");
 
-            // Update language stylesheet
             languageStyle.setAttribute("href", `css/${selectedLang}.css`);
 
-            // Update UI
             languageLinks.forEach((l) => l.classList.remove("active"));
             link.classList.add("active");
             languageText.textContent =
               selectedLang === "english" ? "English" : "العربية";
 
-            // Update RTL/LTR
             if (selectedLang === "arabic") {
               htmlElement.dir = "rtl";
               htmlElement.lang = "ar";
@@ -748,34 +737,50 @@
               document.body.classList.remove("rtl");
             }
 
-            // Store language preference
             localStorage.setItem("selectedLanguage", selectedLang);
+
+            // Wait a moment for CSS to apply, then update placeholder
+            setTimeout(updatePlaceholderFromCSSVar, 100);
           });
         });
 
-        // Load saved preferences
         const savedTheme = localStorage.getItem("selectedTheme") || "light";
         const savedLang = localStorage.getItem("selectedLanguage") || "english";
 
-        // Apply saved theme
         themeLink.setAttribute("href", `css/variables-${savedTheme}.css`);
         document
           .querySelector(`.theme-icon[data-theme="${savedTheme}"]`)
           ?.closest(".theme")
           ?.classList.add("active-theme");
 
-        // Apply saved language
         languageStyle.setAttribute("href", `css/${savedLang}.css`);
         document
           .querySelector(`[data-lang="${savedLang}"]`)
           ?.classList.add("active");
         languageText.textContent =
-          savedLang === "English" ? "English" : "العربية";
+          savedLang === "english" ? "English" : "العربية";
 
         if (savedLang === "arabic") {
           htmlElement.dir = "rtl";
           htmlElement.lang = "ar";
           document.body.classList.add("rtl");
+        }
+
+        // Call it on initial load too
+        setTimeout(updatePlaceholderFromCSSVar, 100);
+
+        // Function to set placeholder from CSS var
+        function updatePlaceholderFromCSSVar() {
+          const rootStyles = getComputedStyle(document.documentElement);
+          const placeholderText = rootStyles
+            .getPropertyValue("--inputSearchContent")
+            .replace(/['"]+/g, "")
+            .trim();
+
+          const input = document.getElementById("searchInput");
+          if (input) {
+            input.setAttribute("placeholder", placeholderText);
+          }
         }
       });
     </script>
